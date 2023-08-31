@@ -1,0 +1,12 @@
+prefix=/Users/petter.hetland/Projects/Rust-WASM-ReactTS---BioSim/web-backend/target/debug/build/openssl-sys-81e2e88051217658/out/openssl-build/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines-1.1
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.1.1q
+Libs: -L${libdir} -lcrypto
+Libs.private:  
+Cflags: -I${includedir}
